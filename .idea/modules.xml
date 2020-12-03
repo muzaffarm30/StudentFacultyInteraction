@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Student-Faculty_Interaction.iml" filepath="$PROJECT_DIR$/.idea/modules/Student-Faculty_Interaction.iml" group="Student-Faculty_Interaction" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Student-Faculty Interaction/app" />
+    </modules>
+  </component>
+</project>

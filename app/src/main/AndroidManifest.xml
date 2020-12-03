@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androidattendancesystem"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+         android:name="com.android.studentfaculty.context.ApplicationContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.androidattendancesystem.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+        <activity
+            android:name="com.android.studentfaculty.activity.Splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.studentfaculty.activity.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.android.studentfaculty.activity.LoginActivity"
+             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:label="Login" >
+        </activity>
+         <activity
+            android:name="com.android.studentfaculty.activity.AdminHomeActivity"
+             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:label="Home" >
+        </activity>
+         <activity
+            android:name="com.android.studentfaculty.activity.AddFacultyActivity"
+             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:label="Add Faculty" >
+        </activity>
+        <activity
+            android:name="com.android.studentfaculty.activity.StudentMaterialsViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:label="Student Materials" >
+        </activity>
+        <activity
+            android:name="com.android.studentfaculty.activity.StudentAddActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:label="Add Student" >
+        </activity>
+        <activity
+            android:name="com.android.studentfaculty.activity.FacultyViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:label="View Faculty" >
+        </activity>
+        <activity
+            android:name="com.android.studentfaculty.activity.StudentViewActivity"
+             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:label="Students" >
+        </activity>
+          <activity
+            android:name="com.android.studentfaculty.activity.FacultyHomeActivity"
+              android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:label="Home" >
+        </activity>
+
+
+    </application>
+
+</manifest>

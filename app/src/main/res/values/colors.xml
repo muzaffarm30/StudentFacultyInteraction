@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#557ac1</color>
+    <color name="colorPrimaryLight">#47647E</color>
+    <color name="colorPrimaryDark">#24374A</color>
+
+    <color name="primary">#2965CC</color>
+    <color name="primaryLight">#4589FF</color>
+    <color name="primaryDark">#2D59A6</color>
+
+    <color name="success">#00A663</color>
+    <color name="successLight">#00D982</color>
+    <color name="successDark">#00804D</color>
+
+    <color name="warning">#F28D00</color>
+    <color name="warningLight">#FFA82E</color>
+    <color name="warningDark">#BE7000</color>
+
+    <color name="danger">#E60000</color>
+    <color name="dangerLight">#FF0000</color>
+    <color name="dangerDark">#B30000</color>
+
+    <color name="greyLightLight">#F7F7F7</color>
+    <color name="greyLightMedium">#E2E2E2</color>
+    <color name="greyLightDark">#D7D7D7</color>
+
+    <color name="greyMedium">#767676</color>
+    <color name="greyMediumLight">#B3B3B3</color>
+    <color name="greyMediumDark">#999999</color>
+
+    <color name="greyDarkMedium">#454545</color>
+    <color name="greyDarkDark">#2D2D2D</color>
+
+    <!--Dashboard-->
+    <color name="purple">#7E00CC</color>
+    <color name="purpleLight">#9D00FF</color>
+    <color name="purpleDark">#5E0099</color>
+
+    <color name="teal">#00998F</color>
+    <color name="tealLight">#00CCBE</color>
+    <color name="tealDark">#007D71</color>
+
+    <color name="yellow">#EEBF54</color>
+    <color name="yellowLight">#FFCD59</color>
+    <color name="yellowDark">#BF8600</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="green">#B0C965</color>
+
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#ff778088</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_active">#343740</color>
+    <color name="calendar_text_unselectable">#A8A9AC</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_transparent">#80000000</color>
+    <color name="white_transparent_50">#80FFFFFF</color>
+    <color name="black_transparent_30">#4D000000</color>
+    <color name="black_transparent_35">#59000000</color>
+    <color name="full_transparent">#00000000</color>
+
+    <!--<color name="colorAccent">#FFFFFF</color>-->
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#EBEBEB</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_selected_day_bg">#557AC1</color>
+
+<!--    Vimeo player-->
+    <color name="itemSelected">#90FFFFFF</color>
+    <color name="dropShadow">#AA000000</color>
+    <color name="menu_text">#222222</color>
+
+    <color name="hexa1a1a1">#a1a1a1</color>
+
+   <!-- right_rounded_color #557AC1 -->
+</resources>

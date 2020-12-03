@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/selectSubjectTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/spinnerSE"
+            android:layout_alignTop="@+id/spinnerSE"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:text="Select Subject"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/spinnerSubjects"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_toRightOf="@+id/textView1" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/materialsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/noAttachementsTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:scrollbars="vertical"
+            android:text="No attchments found."
+            android:textSize="20dp"
+            android:visibility="gone"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonlogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonviewfaculty"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/login_button_bg"
+            android:text="Logout"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>
