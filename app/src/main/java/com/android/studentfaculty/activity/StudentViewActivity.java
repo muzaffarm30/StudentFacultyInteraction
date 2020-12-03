@@ -15,7 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.studentfaculty.bean.StudentDTO;
-import com.android.studentfaculty.db.DBAdapter;
+import com.android.studentfaculty.db.SQLiteDatabaseAdapter;
 import com.example.androidattendancesystem.R;
 
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ public class StudentViewActivity extends AppCompatActivity {
     ArrayList<StudentDTO> studentBeanList;
     String branch;
     String year;
-    DBAdapter dbAdapter = new DBAdapter(this);
+    SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(this);
     private ListView listView;
     private TextView noDataTv;
     private ArrayAdapter<String> listAdapter;

@@ -22,7 +22,7 @@ import android.widget.Toast;
 import com.android.studentfaculty.bean.FacultyDTO;
 import com.android.studentfaculty.bean.StudentDTO;
 import com.android.studentfaculty.context.ApplicationContext;
-import com.android.studentfaculty.db.DBAdapter;
+import com.android.studentfaculty.db.SQLiteDatabaseAdapter;
 import com.android.studentfaculty.utils.SharedPref;
 import com.example.androidattendancesystem.R;
 
@@ -117,7 +117,7 @@ public class LoginActivity extends AppCompatActivity {
                     } else if (TextUtils.isEmpty(pass_word)) {
                         password.setError("enter password");
                     }
-                    DBAdapter dbAdapter = new DBAdapter(LoginActivity.this);
+                    SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(LoginActivity.this);
                     StudentDTO studentBean = dbAdapter.validate_student(user_name, pass_word);
 
                     if (studentBean != null) {
@@ -139,7 +139,7 @@ public class LoginActivity extends AppCompatActivity {
                     } else if (TextUtils.isEmpty(pass_word)) {
                         password.setError("enter password");
                     }
-                    DBAdapter dbAdapter = new DBAdapter(LoginActivity.this);
+                    SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(LoginActivity.this);
                     FacultyDTO facultyBean = dbAdapter.validateFaculty(user_name, pass_word);
 
                     if (facultyBean != null) {

@@ -17,7 +17,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.studentfaculty.bean.FacultyDTO;
-import com.android.studentfaculty.db.DBAdapter;
+import com.android.studentfaculty.db.SQLiteDatabaseAdapter;
 import com.example.androidattendancesystem.R;
 
 public class FacultyViewActivity extends AppCompatActivity {
@@ -26,7 +26,7 @@ public class FacultyViewActivity extends AppCompatActivity {
 	private ListView listView ;  
 	private ArrayAdapter<String> listAdapter;
 
-	DBAdapter dbAdapter = new DBAdapter(this);
+	SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(this);
 	private TextView noDataTv;
 
 	@Override

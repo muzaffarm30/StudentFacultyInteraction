@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.android.studentfaculty.bean.AttendanceBean;
 import com.android.studentfaculty.context.ApplicationContext;
-import com.android.studentfaculty.db.DBAdapter;
+import com.android.studentfaculty.db.SQLiteDatabaseAdapter;
 import com.android.studentfaculty.utils.SharedPref;
 import com.example.androidattendancesystem.R;
 
@@ -100,7 +100,7 @@ public class AdminHomeActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View arg0) {
 				
-				DBAdapter dbAdapter = new DBAdapter(AdminHomeActivity.this);
+				SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(AdminHomeActivity.this);
 				ArrayList<AttendanceBean> attendanceBeanList=dbAdapter.getAllAttendanceByStudent();
 				((ApplicationContext) AdminHomeActivity.this.getApplicationContext()).setAttendanceBeanList(attendanceBeanList);
 

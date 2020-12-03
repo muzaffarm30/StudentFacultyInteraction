@@ -17,14 +17,14 @@ import android.widget.TextView;
 
 import com.android.studentfaculty.adapter.MaterialsAdapter;
 import com.android.studentfaculty.bean.MaterialsDTO;
-import com.android.studentfaculty.db.DBAdapter;
+import com.android.studentfaculty.db.SQLiteDatabaseAdapter;
 import com.android.studentfaculty.utils.SharedPref;
 import com.example.androidattendancesystem.R;
 
 import java.util.ArrayList;
 
 public class StudentMaterialsViewActivity extends AppCompatActivity {
-    DBAdapter dbAdapter = new DBAdapter(this);
+    SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(this);
     private RecyclerView materialsRecycler;
     private TextView noAttachementsTv;
     private TextView selectSubjectTv;

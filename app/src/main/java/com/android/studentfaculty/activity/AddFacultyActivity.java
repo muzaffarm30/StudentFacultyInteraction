@@ -1,7 +1,7 @@
 package com.android.studentfaculty.activity;
 
 import com.android.studentfaculty.bean.FacultyDTO;
-import com.android.studentfaculty.db.DBAdapter;
+import com.android.studentfaculty.db.SQLiteDatabaseAdapter;
 import com.example.androidattendancesystem.R;
 
 import android.content.Intent;
@@ -86,7 +86,7 @@ public class AddFacultyActivity extends AppCompatActivity {
 					facultyBean.setFaculty_username(userName);
 					facultyBean.setFaculty_password(passWord);
 					
-					DBAdapter dbAdapter = new DBAdapter(AddFacultyActivity.this);
+					SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(AddFacultyActivity.this);
 					dbAdapter.addFaculty(facultyBean);
 					
 					Intent intent =new Intent(AddFacultyActivity.this, AdminHomeActivity.class);

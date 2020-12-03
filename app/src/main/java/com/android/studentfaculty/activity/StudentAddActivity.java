@@ -19,7 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.studentfaculty.bean.StudentDTO;
-import com.android.studentfaculty.db.DBAdapter;
+import com.android.studentfaculty.db.SQLiteDatabaseAdapter;
 import com.example.androidattendancesystem.R;
 
 public class StudentAddActivity extends AppCompatActivity {
@@ -138,7 +138,7 @@ public class StudentAddActivity extends AppCompatActivity {
                     studentBean.setStudent_username(username);
                     studentBean.setStudent_password(password);
 
-                    DBAdapter dbAdapter = new DBAdapter(StudentAddActivity.this);
+                    SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(StudentAddActivity.this);
                     dbAdapter.addStudent(studentBean);
 
 

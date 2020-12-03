@@ -33,7 +33,7 @@ import com.android.studentfaculty.bean.FacultyDTO;
 import com.android.studentfaculty.bean.MaterialsDTO;
 import com.android.studentfaculty.bean.StudentDTO;
 import com.android.studentfaculty.context.ApplicationContext;
-import com.android.studentfaculty.db.DBAdapter;
+import com.android.studentfaculty.db.SQLiteDatabaseAdapter;
 import com.android.studentfaculty.utils.SharedPref;
 import com.android.studentfaculty.utils.UploadFilePath;
 import com.example.androidattendancesystem.R;
@@ -243,7 +243,7 @@ public class FacultyHomeActivity<AddAttandanceActivity> extends AppCompatActivit
                 attendanceSessionBean.setAttendance_session_date(dateEditText.getText().toString());
                 attendanceSessionBean.setAttendance_session_subject(subject);
 
-                DBAdapter dbAdapter = new DBAdapter(FacultyHomeActivity.this);
+                SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(FacultyHomeActivity.this);
                 int sessionId = dbAdapter.addAttendanceSession(attendanceSessionBean);
 
                 ArrayList<StudentDTO> studentBeanList = dbAdapter.getAllStudentByBranchYear();
@@ -279,7 +279,7 @@ public class FacultyHomeActivity<AddAttandanceActivity> extends AppCompatActivit
                 attendanceSessionBean.setAttendance_session_date(dateEditText.getText().toString());
                 attendanceSessionBean.setAttendance_session_subject(subject);
 
-                DBAdapter dbAdapter = new DBAdapter(FacultyHomeActivity.this);
+                SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(FacultyHomeActivity.this);
 
                 ArrayList<AttendanceBean> attendanceBeanList = dbAdapter.getAttendanceBySessionID(attendanceSessionBean);
                 ((ApplicationContext) FacultyHomeActivity.this.getApplicationContext()).setAttendanceBeanList(attendanceBeanList);
@@ -302,7 +302,7 @@ public class FacultyHomeActivity<AddAttandanceActivity> extends AppCompatActivit
                 attendanceSessionBean.setAttendance_session_class(year);
                 attendanceSessionBean.setAttendance_session_subject(subject);
 
-                DBAdapter dbAdapter = new DBAdapter(FacultyHomeActivity.this);
+                SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(FacultyHomeActivity.this);
 
                 ArrayList<AttendanceBean> attendanceBeanList = dbAdapter.getTotalAttendanceBySessionID(attendanceSessionBean);
                 ((ApplicationContext) FacultyHomeActivity.this.getApplicationContext()).setAttendanceBeanList(attendanceBeanList);
@@ -372,7 +372,7 @@ public class FacultyHomeActivity<AddAttandanceActivity> extends AppCompatActivit
                         materialsBean.setMaterial_location(file.toString());
                         materialsBean.setLang(lang);
 
-                        DBAdapter dbAdapter = new DBAdapter(FacultyHomeActivity.this);
+                        SQLiteDatabaseAdapter dbAdapter = new SQLiteDatabaseAdapter(FacultyHomeActivity.this);
                         dbAdapter.addMaterials(materialsBean);
 
 

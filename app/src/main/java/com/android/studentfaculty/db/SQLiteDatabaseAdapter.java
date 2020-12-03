@@ -14,14 +14,14 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-public class DBAdapter extends SQLiteOpenHelper {
+public class SQLiteDatabaseAdapter extends SQLiteOpenHelper {
 
 	// All Static variables
 	// Database Version
 	private static final int DATABASE_VERSION = 1;
 
 	// Database Name
-	private static final String DATABASE_NAME = "Attendance";
+	private static final String DATABASE_NAME = "studentFaculty";
 
 	// Contacts table name
 	private static final String FACULTY_INFO_TABLE = "faculty_table";
@@ -67,7 +67,7 @@ public class DBAdapter extends SQLiteOpenHelper {
 	private static final String KEY_ATTENDANCE_STATUS = "attendance_status";
 
 
-	public DBAdapter(Context context) {
+	public SQLiteDatabaseAdapter(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	}
 
